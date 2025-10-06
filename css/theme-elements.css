@@ -21009,6 +21009,11 @@ p .alternative-font {
 /* Links */
 a {
 	color: var(--primary);
+
+    &.white {
+        color: var(--light);
+        text-decoration: underline;
+    }
 }
 
 a:hover {
