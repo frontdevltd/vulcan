@@ -21013,6 +21013,9 @@ a {
     &.white {
         color: var(--light);
         text-decoration: underline;
+        &:hover {
+            color: var(--dark);
+        }
     }
 }
 
