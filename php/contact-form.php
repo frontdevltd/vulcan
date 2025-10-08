@@ -57,12 +57,12 @@ try {
 	// Step 2 (Optional) - If you don't receive the email, try to configure the parameters below:
 
 	$mail->IsSMTP();                                         // Set mailer to use SMTP
-	$mail->Host = 'contact@vulcanrisk.onmicrosoft.com';				       // Specify main and backup server
+	$mail->Host = 'smtp.office365.com';				       // Specify main and backup server
 	$mail->SMTPAuth = true;                                  // Enable SMTP authentication
 	$mail->Username = 'contact@vulcanrisk.com';                    // SMTP username
-	$mail->Password = 'Vulcan121!';                              // SMTP password
-	$mail->SMTPSecure = 'ssl';                               // Enable encryption, 'ssl' also accepted
-	$mail->Port = 465;   								       // TCP port to connect to
+	$mail->Password = 'Vu!C4nT4m';                              // SMTP password
+	$mail->SMTPSecure = 'tls';                               // Enable encryption, 'ssl' also accepted
+	$mail->Port = 587;   								       // TCP port to connect to
 
 	$mail->AddAddress($email);	 						       // Add another recipient
 
