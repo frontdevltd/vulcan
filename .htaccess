@@ -1,0 +1,6 @@
+RewriteEngine On
+
+# Force HTTPS and non-www
+RewriteCond %{HTTPS} !=on [OR]
+RewriteCond %{HTTP_HOST} ^www\.vulcanrisk\.com [NC]
+RewriteRule ^(.*)$ https://vulcanrisk.com/$1 [L,R=301]
